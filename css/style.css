@@ -27,10 +27,15 @@ body {
 #churrasco-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 
 .container .logo {
   width: 150px;
   margin-bottom: 40px;
+}
+
+#churrasco-form .icon {
+  width: 50px;
 }
