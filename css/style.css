@@ -54,3 +54,17 @@ body {
   width: 250px;
   margin-bottom: 30px;
 }
+
+#churrasco-form button {
+  padding: 12px 24px;
+  background-color: #4b0100;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#churrasco-form button:hover {
+  background-color: #674040;
+}
