@@ -18,12 +18,24 @@ function calcular() {
     const totalRefrigerante = homens * consumo.refrigerante.homens + mulheres * consumo.refrigerante.mulheres + criancas * consumo.refrigerante.criancas;
     const totalCerveja = homens * consumo.cerveja.homens + mulheres * consumo.cerveja.mulheres;
 
+    function formatarUnidade(valor, unidade) {
+        if (valor >= 1000) {
+          if (unidade === 'g') {
+            return `${(valor / 1000).toFixed(2)} kg`;
+          } else if (unidade === 'ml') {
+            return `${(valor / 1000).toFixed(2)} L`;
+          }
+        } else {
+          return `${valor} ${unidade}`;
+        }
+      }
 
-    document.getElementById('carne').innerText = `Carne bovina: ${totalCarne}g`;
-    document.getElementById('frango').innerText = `Frango: ${totalFrango}g`;
-    document.getElementById('linguica').innerText = `Linguiça: ${totalLinguica}g`;
-    document.getElementById('refrigerante').innerText = `Refrigerante: ${totalRefrigerante}ml`;
-    document.getElementById('cerveja').innerText = `Cerveja: ${totalCerveja}ml`;
+
+      document.getElementById('carne').innerText = `Carne bovina: ${formatarUnidade(totalCarne, 'g')}`;
+      document.getElementById('frango').innerText = `Frango: ${formatarUnidade(totalFrango, 'g')}`;
+      document.getElementById('linguica').innerText = `Linguiça: ${formatarUnidade(totalLinguica, 'g')}`;
+      document.getElementById('refrigerante').innerText = `Refrigerante: ${formatarUnidade(totalRefrigerante, 'ml')}`;
+      document.getElementById('cerveja').innerText = `Cerveja: ${formatarUnidade(totalCerveja, 'ml')}`;
 
     document.getElementById('resultados').style.display = 'block';
   document.getElementById('churrasco-form').style.display = 'none';
