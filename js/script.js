@@ -25,6 +25,13 @@ function calcular() {
     document.getElementById('refrigerante').innerText = `Refrigerante: ${totalRefrigerante}ml`;
     document.getElementById('cerveja').innerText = `Cerveja: ${totalCerveja}ml`;
 
-    document.getElementById('resultados').classList.remove('oculto');
-    document.getElementById('churrasco-form').style.display = 'none';
+    document.getElementById('resultados').style.display = 'block';
+  document.getElementById('churrasco-form').style.display = 'none';
+
+
+document.getElementById('voltarBtn').addEventListener('click', function() {
+  document.getElementById('resultados').style.display = 'none';
+  document.getElementById('churrasco-form').style.display = 'flex';
+});
+
 }
