@@ -68,3 +68,7 @@ body {
 #churrasco-form button:hover {
   background-color: #674040;
 }
+
+.oculto {
+  display: none;
+}

@@ -24,4 +24,7 @@ function calcular() {
     document.getElementById('linguica').innerText = `Linguiça: ${totalLinguica}g`;
     document.getElementById('refrigerante').innerText = `Refrigerante: ${totalRefrigerante}ml`;
     document.getElementById('cerveja').innerText = `Cerveja: ${totalCerveja}ml`;
+
+    document.getElementById('resultados').classList.remove('oculto');
+    document.getElementById('churrasco-form').style.display = 'none';
 }
