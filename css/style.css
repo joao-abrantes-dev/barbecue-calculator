@@ -52,7 +52,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 15px;
   width: 250px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 #churrasco-form button {
@@ -75,7 +75,7 @@ body {
   color: white;
   border: none;
   border-radius: 5px;
-  margin-top: 40px;
+  margin-top: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
